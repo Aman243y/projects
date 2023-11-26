@@ -1,0 +1,4 @@
+<div>
+    <app-search-bar (newItemEvent)="onEmit($event)"></app-search-bar>
+    <app-page-list *ngIf="pages.length" [pageAria]="pages"></app-page-list>
+</div>

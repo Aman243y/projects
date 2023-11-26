@@ -1,0 +1,24 @@
+
+
+  
+<table class="table table table-success table-striped-columns ">
+    <thead class="table-dark">
+      <tr>
+        
+        <th scope="col" *ngFor="let vada of headers">{{vada.label}}</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let pav of data">
+        
+        <!--<td>{{pav.name}}</td>
+        <td>{{pav.job}}</td>
+        <td>{{pav.age}}</td>
+        <td>{{pav.status}}</td>-->
+        <td *ngFor="let header of headers ">{{pav[header.key]}}</td>
+
+      </tr>
+      
+      
+    </tbody>
+  </table>

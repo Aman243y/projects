@@ -1,0 +1,8 @@
+<div class="container-fluid">
+    <form class="border border-info-subtle " (submit)="onformSubmit($event)">
+        <input type="text" class="form-control mb-2" placeholder="Search here" 
+        #input (input)="term=input.value" autofocus>
+        <!-- <button type="button" (click)="onformSubmit($event)">search</button> -->
+    </form>
+
+</div>
